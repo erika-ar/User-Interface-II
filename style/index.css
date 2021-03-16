@@ -42,13 +42,17 @@ header nav {
 	width: 40%;
 }
 
-.button {
+.button{
 	padding: 2px;
 	width: 15rem;
 	border: 1px solid #3f3939;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+nav .button home{
+	background-color: black;
 }
 
 main {
@@ -114,4 +118,18 @@ footer nav a {
 }
 .social {
 	display: flex;
+}
+
+@media(max-width: 500px) {
+
+nav button{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+}
+
+footer{
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
